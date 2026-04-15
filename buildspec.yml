@@ -1,0 +1,11 @@
+version: 0.2
+phases:
+  build:
+    commands:
+      - echo "Build started"
+      - echo "App version 1.0"
+artifacts:
+  files:
+    - index.html
+    - appspec.yml
+    - scripts/**/*
