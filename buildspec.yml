@@ -1,11 +1,17 @@
 version: 0.2
+
 phases:
+  install:
+    commands:
+      - echo "Install phase"
   build:
     commands:
-      - echo "Build started"
-      - echo "App version 1.0"
+      - echo "Build started on `date`"
+      - echo "Packaging app"
+
 artifacts:
   files:
     - index.html
     - appspec.yml
-    - scripts/**/*
+    - scripts/install_deps.sh
+  discard-paths: no
